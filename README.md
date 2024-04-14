@@ -1,3 +1,3 @@
 sam.py
-  - SAM
-  - ASAM
+- SAM
+- ASAM

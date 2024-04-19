@@ -57,6 +57,9 @@ class ASAM:
     """
 
     def __init__(self, optimizer, model, rho=0.5, eta=0.01):
+        assert rho >= 0.0, f"Invalid rho, should be non-negative: {rho}"
+        assert eta >= 0.0, f"Invalid eta, should be non-negative: {eta}"
+        
         self.optimizer = optimizer
         self.model = model
         self.rho = rho
